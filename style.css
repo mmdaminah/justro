@@ -18,14 +18,17 @@ html , body {
     width: 100px;
     position: relative;
     bottom: 110px;
-    left: 10px;
+    left: 40px;
 }
 .logo-photo {
     width: 60px;
     height: 60px;
+    position: relative;
+    left: 60px;
+    bottom: 40px;
 }
 .div-dvi {
-    height: 2rem;
+    height: 10rem;
 }
 @media only screen and (max-width: 992px) {
     .nav-custom {
