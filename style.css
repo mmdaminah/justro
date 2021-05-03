@@ -7,3 +7,28 @@ html , body {
 * {
     box-sizing: border-box;
 }
+.nav-custom {
+    /* min-height: 8rem; */
+}
+.logo-background {
+    width: 20rem;
+    height: 10rem;
+}
+.logo-div {
+    width: 100px;
+    position: relative;
+    bottom: 110px;
+    left: 10px;
+}
+.logo-photo {
+    width: 60px;
+    height: 60px;
+}
+.div-dvi {
+    height: 2rem;
+}
+@media only screen and (max-width: 992px) {
+    .nav-custom {
+      background-color: lightgray;
+    }
+  }
