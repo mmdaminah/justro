@@ -61,6 +61,21 @@ html , body {
     width: 50px;
     height: 50px;
 }
+.slide2-icon {
+    width: 30px;
+    height: 30px;
+    filter: invert(22%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+}
+.slide2-icon-div {
+    width: 50px;
+    height: 50px;
+    border: limegreen 2px solid;
+    border-radius: 50%;
+}
+.mobile-div img{
+    width: 15rem;
+    height: 100%;
+}
 @media only screen and (max-width: 992px) {
     .nav-custom {
       background-color: lightgray;
