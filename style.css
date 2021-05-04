@@ -1,3 +1,7 @@
+@font-face {
+    font-family: shabnam;
+    src: url(./assetes/fonts/Shabnam.woff);
+}
 html , body {
     width: 100%;
     height: 100%;
@@ -6,19 +10,21 @@ html , body {
 }
 * {
     box-sizing: border-box;
+    font-family: shabnam;
 }
-.nav-custom {
-    /* min-height: 8rem; */
-}
+/* .nav-custom {
+    min-height: 8rem;
+} */
 .logo-background {
     width: 20rem;
     height: 10rem;
+    position: relative;
+    right: 10px;
 }
 .logo-div {
     width: 100px;
     position: relative;
     bottom: 110px;
-    left: 40px;
 }
 .logo-photo {
     width: 60px;
@@ -28,10 +34,45 @@ html , body {
     bottom: 40px;
 }
 .div-dvi {
+    width: 20rem;
     height: 10rem;
+    position: relative;
+    right: 30px;
+}
+.caption1 img {
+    width: 390px;
+    max-height: 300px;
+}
+.caption1 div {
+    width: 400px;
+    max-height: 144px;
+}
+.footer {
+    width: 100%;
+    height: 10rem;
+    background: url(./assetes/img/025_footer_Bg.svg) no-repeat;
+    
+    background-size: cover;
+}
+.footer-link {
+    font-size: smaller;
+}
+.camel {
+    width: 50px;
+    height: 50px;
 }
 @media only screen and (max-width: 992px) {
     .nav-custom {
       background-color: lightgray;
+    }
+    .caption1 img {
+        max-width: 300px;
+    }
+    .caption1 div {
+        width: 300px;
+        max-height: 190px;
+    }
+    .footer {
+        background-color: rgb(14, 155, 14);
     }
   }
