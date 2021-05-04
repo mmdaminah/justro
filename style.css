@@ -76,6 +76,20 @@ html , body {
     width: 15rem;
     height: 100%;
 }
+.download-icon {
+    width: 80px;
+    height: 80px;
+}
+.bazzar-icon {
+    width: 25px;
+}
+.slide3 {
+    width: 50%;
+    background-color: rgb(245, 242, 242);
+}
+.download-button {
+    font-size: smaller;
+}
 @media only screen and (max-width: 992px) {
     .nav-custom {
       background-color: lightgray;
@@ -89,5 +103,8 @@ html , body {
     }
     .footer {
         background-color: rgb(14, 155, 14);
+    }
+    .slide3 {
+        width: 100%;
     }
   }
