@@ -156,6 +156,9 @@ copyed from internet
     border-radius: 10px;
     margin:5px 10px;
 }
+.slide-5 {
+    width: 40%;
+}
 @media only screen and (max-width: 992px) {
     .nav-custom {
       background-color: lightgray;
@@ -182,5 +185,8 @@ copyed from internet
     }
     .slide-4-button {
         position: initial;
+    }
+    .slide-5 {
+        width: 80%;
     }
   }
