@@ -15,6 +15,21 @@ html , body {
 /* .nav-custom {
     min-height: 8rem;
 } */
+.nav-link {
+    transition: all 0.3s;
+}
+.nav-item-links:hover {
+    background-color: black;
+    color: white !important;
+    border-radius: 5px;
+}
+.custom-button {
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: orange;
+    border: 2px solid orangered;
+}
 .logo-background {
     width: 20rem;
     height: 10rem;
@@ -60,6 +75,7 @@ html , body {
 .camel {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
 }
 .slide2-icon {
     width: 30px;
@@ -86,9 +102,6 @@ html , body {
 .slide3 {
     width: 50%;
     background-color: rgb(245, 242, 242);
-}
-.download-button {
-    font-size: smaller;
 }
 /*
 copyed from internet
@@ -146,6 +159,29 @@ copyed from internet
 .slide-4-button {
     position: relative;
     top: 70px;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: orange;
+    border: 2px solid orangered;
+}
+.download-button {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(60, 173, 60);
+    color: white;
+}
+.donwload-box {
+    box-shadow: -1px 19px 28px 0px rgba(0,0,0,0.75);
+}
+.inp::placeholder{
+    padding:0 20px;
+}
+.button-postion{
+    position: relative;
+    left: 30px;
 }
 .slideShow {
     overflow-x: auto;
@@ -156,8 +192,33 @@ copyed from internet
     border-radius: 10px;
     margin:5px 10px;
 }
+.line {
+    width: 2px;
+    height: 460px;
+    background-color: green;
+    position: absolute;
+
+}
 .slide-5 {
-    width: 40%;
+    width: 50%;
+}
+.telegram {
+    width: 40px;
+}
+.instagram {
+    width: 40px;
+}
+.twitter {
+    width: 40px;
+}
+.footer-img {
+    width: 500px;
+    height: 100px;
+    background: url(./assetes/img/026_footer_c.right_bg.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    top:60px;
+    font-size: small;
 }
 @media only screen and (max-width: 992px) {
     .nav-custom {

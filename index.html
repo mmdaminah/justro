@@ -27,16 +27,16 @@
           </button>
         </div>
         <div class="w-25 d-none d-lg-flex justify-content-end">
-          <button>دانلود</button>
+          <button class="custom-button">دانلود</button>
         </div>
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
           <div class="navbar-nav d-flex align-items-end flex-lg-row-reverse">
-            <a class="nav-link active mx-lg-2" href="#">صفحه اصلی<span class="sr-only">(current)</span></a>
-            <a class="nav-link active mx-lg-2" href="#">ایده ها</a>
-            <a class="nav-link active mx-lg-2" href="#">ویژگی ها</a>
-            <a class="nav-link active mx-lg-2" href="#">درباره ما</a>
-            <a class="nav-link active mx-lg-2" href="#">همکاری با ما</a>
-            <a class="nav-link active mx-lg-2" href="#">تماس با ما</a>
+            <a class="nav-link active mx-lg-1 nav-item-links" href="#">صفحه اصلی<span class="sr-only">(current)</span></a>
+            <a class="nav-link active mx-lg-1 nav-item-links" href="#">ایده ها</a>
+            <a class="nav-link active mx-lg-1 nav-item-links" href="#">ویژگی ها</a>
+            <a class="nav-link active mx-lg-1 nav-item-links" href="#">درباره ما</a>
+            <a class="nav-link active mx-lg-1 nav-item-links" href="#">همکاری با ما</a>
+            <a class="nav-link active mx-lg-1 nav-item-links" href="#">تماس با ما</a>
           </div>
         </div>
       </nav>
@@ -91,6 +91,7 @@
                 <div class="slide2-icon-div d-flex justify-content-center align-items-center">
                   <img class="slide2-icon" src="./assetes/img/015_icon_hotel.svg" alt="">
                 </div>
+                <div class="line d-none d-lg-inline"></div>
             </div>
             <div class="w-100 w-lg-25 mobile-div  text-center">
                 <img src="./assetes/img/mobile.svg" alt="">
@@ -102,30 +103,36 @@
         </div>
         <!-- slide 2 ends -->
         <!-- slide 3 start -->
-        <div class="slide3 p-2 mx-auto d-flex flex-column justify-content-center align-items-center">
+        <div class="my-5 donwload-box slide3 p-2 mx-auto d-flex flex-column justify-content-center align-items-center">
             <div class="text-center d-flex flex-column justify-content-center align-items-center">
               <div>دانلود اپلیکیشن جاسترو</div>
               شما می توانید با وارد کردن شماره همراه خود در کادر پایین، لینک دانلود اپلیکیشن را دریافت کنید
             </div>
-            <div class="w-100 d-flex align-items-center justify-content-sm-center justify-content-lg-between">
+            <div class="w-100  d-flex align-items-center justify-content-sm-center justify-content-lg-between">
                 <div>
-                  <input type="button" value="دانلود">
-                  <input type="text">
+                  <!-- <input type="button" value="دانلود">
+                  <input type="text" placeholder="09"> -->
+                  <div class="input-group mb-3 mx-auto">
+                    <!-- <div class="input-group-prepend">
+                    </div> -->
+                    <button style="z-index: 2;" class="button-postion input-group-text custom-button" id="inputGroup-sizing-default">دانلود</button>
+                    <input style="z-index: 1;border-radius: 20px;height:40px;" type="text" dir="ltr" placeholder="09" class="form-control inp" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  </div>
                 </div>
                 <img class="download-icon ml-2 mx-md-4" src="./assetes/img/021_dlbox_icon_download.svg" alt="">
             </div>
             <div>
               یا یکی از روشهای زیر اپلیکیشن جسترو را دانلود کنید
             </div>
-            <div>
-                <button>کافه بازار <img class="bazzar-icon" src="./assetes/img/bazar.png" alt=""></button>
-                <button><i class="fa fa-play"></i>Google Play</button>
-                <button class="download-button">دانلود مستقیم<i class="fa fa-download"></i></button>
+            <div class="my-3">
+                <button class="download-button">کافه بازار <img class="bazzar-icon" src="./assetes/img/bazar.png" alt=""></button>
+                <button class="download-button"><i class="fa fa-play"></i> Google Play</button>
+                <button class="download-button">دانلود مستقیم <i class="fa fa-download"></i></button>
             </div>
         </div>
         <!-- slide 3 ends -->
         <!-- slide 4 starts -->
-        <div class="slide-4 d-flex flex-column justify-content-center align-items-center">
+        <div class="my-5 slide-4 d-flex flex-column justify-content-center align-items-center">
           <div class="text-center d-flex flex-column justify-content-center align-items-center">
             <div>آمادگی سفر</div>
             لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
@@ -137,7 +144,7 @@
         </div>
         <!-- slide 4 ends -->
         <!-- slide 5 starts -->
-        <div>
+        <div class="my-5">
           <div class="my-auto text-right">
             <div class="text-center">ایده های سفر</div>
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی . 
@@ -151,19 +158,19 @@
           </div>
         </div>
         <!-- slide 5 ends -->
-        <!-- slide 5 starts -->
-        <div class="slide-5 mx-auto">
-            <div class="text-center">ایده های جدید رو هفتگی دریافت کن،کافیه آدرس ایمیل خودتون رو در کادر زیر وارد کنید و گزینه ثبت ایمیل رو برنید.</div>
+        <!-- slide 6 starts -->
+        <div class="slide-5 mx-auto my-5">
+            <div class="text-center my-3">ایده های جدید رو هفتگی دریافت کن،کافیه آدرس ایمیل خودتون رو در کادر زیر وارد کنید و گزینه ثبت ایمیل رو برنید.</div>
             <div class="input-group mb-3 mx-auto">
               <div class="input-group-prepend">
-                <button class="input-group-text" id="inputGroup-sizing-default">ثبت ایمیل</button>
+                <button class="input-group-text custom-button" id="inputGroup-sizing-default">ثبت ایمیل</button>
               </div>
               <input type="text" dir="rtl" placeholder="ایمیل خود راوارد کنید..." class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
         </div>
-        <!-- slide 5 ends -->
-        <!-- footer start -->
-        <div class="footer w-100">
+        <!-- slide 6 ends -->
+        <!-- footer mobile start -->
+        <div class="footer w-100 d-lg-none">
             <div class="d-flex flex-row-reverse justify-content-between">
               <div class="w-50 d-flex flex-wrap h-50">
                 <div class="w-50 footer-link">لینک اصلی</div>
@@ -180,12 +187,37 @@
               </div>
             </div>
             <div class="d-flex justify-content-center align-items-end my-4">
-                <div class="mx-2">en.mmdamin@gmail.com</div>
+                <div class="mx-2"><i class="fa fa-inbox"></i> en.mmdamin@gmail.com</div>
                 <div class="mx-2"><img class="camel" src="./assetes/img/camel.jpg" alt=""></div>
-                <div class="mx-2">09371522930</div>
+                <div class="mx-2"><i class="fa fa-phone"></i>  09371522930</div>
             </div>
         </div>
-        <!-- footer end -->
+        <!-- footer mobile end -->
+        <!-- footer desktop starts -->
+        <div class="footer d-lg-flex d-none">
+            <div class="d-flex justify-content-center align-items-end my-4">
+              <div class="mx-2"><i class="fa fa-inbox"></i> en.mmdamin@gmail.com</div>
+              <div class="mx-2"><img class="camel" src="./assetes/img/camel.jpg" alt=""></div>
+              <div class="mx-2"><i class="fa fa-phone"></i>  09371522930</div>
+            </div>
+            <div class="p-2 d-flex flex-column">
+              <img class="instagram" src="./assetes/instagram.png" alt="">
+              <img class="telegram" src="./assetes/telegram.png" alt="">
+              <img class="twitter" src="./assetes/twitter.png" alt="">
+            </div>
+            <div class="w-50 d-flex flex-wrap h-50">
+              <div class="w-50 footer-link">لینک اصلی</div>
+              <div class="w-50 footer-link">لینک اصلی</div>
+              <div class="w-50 footer-link">لینک اصلی</div>
+              <div class="w-50 footer-link">لینک اصلی</div>
+              <div class="w-50 footer-link">لینک اصلی</div>
+              <div class="w-50 footer-link">لینک اصلی</div>
+            </div>
+            <div class="footer-img">
+              <span>کلیه حقوق این وبسایت متعلق به <span>جاسترو</span> بوده و هرگونه استفاده از محتویات آن غیرمجاز است.</span>
+            </div>
+        </div>
+        <!-- footer desktop ends -->
     </div>
     <!-- main ends -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
