@@ -90,6 +90,72 @@ html , body {
 .download-button {
     font-size: smaller;
 }
+/*
+copyed from internet
+*/
+.ocean {
+    min-height: 250px;
+    width: 100%;
+    margin: 0 auto;
+    /* max-width: 960px; */
+    overflow: hidden;
+    position: relative;
+    background: white;
+  }
+  .wave {
+    background: url(./assetes/img/020_dlbox_bg2.svg) repeat-x;
+    position: absolute;
+    bottom: 0;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
+  .wave:nth-of-type(2) {
+    bottom: 25px;
+    animation: wave2 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
+    opacity: 1;
+  }
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  @keyframes wave2 {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: +1600px;
+    }
+  }
+/*
+copyed from internet
+*/
+.slide-4 {
+    /* width: 100%; */
+    min-height: 19rem;
+    background: url(./assetes/img/022_bg_amadegisafar.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.slide-4-button {
+    position: relative;
+    top: 70px;
+}
+.slideShow {
+    overflow-x: auto;
+}
+.slideShow img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin:5px 10px;
+}
 @media only screen and (max-width: 992px) {
     .nav-custom {
       background-color: lightgray;
@@ -106,5 +172,15 @@ html , body {
     }
     .slide3 {
         width: 100%;
+    }
+    .slide-4 {
+        min-height: 170px;
+        background: url(./assetes/img/023_amadegisafar.jpg);
+        background-size: cover; 
+        max-height: 170px;
+        color: black;
+    }
+    .slide-4-button {
+        position: initial;
     }
   }
