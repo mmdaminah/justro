@@ -166,12 +166,13 @@ copyed from internet
     border: 2px solid orangered;
 }
 .download-button {
-    width: 129px;
+    width: 95px;
     height: 40px;
     border: none;
     border-radius: 20px;
     background-color: rgb(60, 173, 60);
     color: white;
+    font-size: smaller;
 }
 .donwload-box {
     box-shadow: -1px 19px 28px 0px rgba(0,0,0,0.75);
