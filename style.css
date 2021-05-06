@@ -103,51 +103,67 @@ html , body {
     width: 50%;
     background-color: rgb(245, 242, 242);
 }
-/*
-copyed from internet
-*/
 .ocean {
-    min-height: 250px;
-    width: 100%;
-    margin: 0 auto;
-    /* max-width: 960px; */
     overflow: hidden;
+    margin-top: 100px;
+}
+.wave {
+    width: 10000px;
+    height: 100px;
+    background-image: url(./assetes/img/020_dlbox_bg2.svg);
     position: relative;
-    background: white;
-  }
-  .wave {
-    background: url(./assetes/img/020_dlbox_bg2.svg) repeat-x;
-    position: absolute;
-    bottom: 0;
-    width: 6400px;
-    height: 198px;
-    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-    transform: translate3d(0, 0, 0);
-  }
-  .wave:nth-of-type(2) {
-    bottom: 25px;
-    animation: wave2 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite;
-    opacity: 1;
-  }
-  @keyframes wave {
-    0% {
-      margin-left: 0;
+    animation: wavy 30s infinite;
+}
+.wave2 {
+    width: 10000px;
+    height: 100px;
+    background-image: url(./assetes/img/020_dlbox_bg2.svg);
+    position: relative;
+    bottom: 200px;
+    animation: wavy2 30s infinite;
+}
+.wave3 {
+    width: 10000px;
+    height: 100px;
+    background-image: url(./assetes/img/020_dlbox_bg2.svg);
+    position: relative;
+    bottom: 100px;
+    left: 255px;
+    animation: wavy3 30s infinite;
+}
+@keyframes wavy3 {
+    0%{
+        transform: scaleX(-1) translateX(0px);
     }
-    100% {
-      margin-left: -1600px;
+    50%{
+        transform: scaleX(-1) translateX(2000px);
     }
-  }
-  @keyframes wave2 {
-    0% {
-      margin-left: 0;
+    100%{
+        transform: scaleX(-1) translateX(0px);
     }
-    100% {
-      margin-left: +1600px;
+}
+@keyframes wavy2 {
+    0%{
+        right: 2000px;
     }
-  }
-/*
-copyed from internet
-*/
+    50%{
+        right: 0px;
+    }
+    100%{
+        right: 2000px;
+    }
+}
+@keyframes wavy {
+    0%{
+        right: 0px;
+    }
+    50%{
+        right: 2000px;
+    }
+    100%{
+        right: 0px;
+    }
+}
 .slide-4 {
     /* width: 100%; */
     min-height: 19rem;
@@ -177,8 +193,12 @@ copyed from internet
 .donwload-box {
     box-shadow: -1px 19px 28px 0px rgba(0,0,0,0.75);
 }
-.inp::placeholder{
-    padding:0 20px;
+.inp{
+    padding:0 30px;
+}
+.inp:focus{
+    outline: none !important;
+    box-shadow: none;
 }
 .button-postion{
     position: relative;
@@ -203,64 +223,60 @@ copyed from internet
 .slide-5 {
     width: 50%;
 }
-.telegram {
-    width: 40px;
-}
-.instagram {
-    width: 40px;
-}
-.twitter {
-    width: 40px;
-}
-.footer2{
-    background: url(./assetes/img/025_footer_Bg.svg);
+.footer-desktop {
+    min-width: 100%;
+    min-height: 15rem;
+    background-image: url(./assetes/img/025_footer_Bg.svg);
     background-repeat: no-repeat;
-    min-height: 14rem;
-    min-width: 90rem;
-}
-.links {
-    position: relative;
-    left: 150px;
-    top: 100px;
-    font-size: larger;
+    background-size: cover;
 }
 .instagram {
+    width: 50px;
     position: relative;
-    left: 200px;
-    bottom: 10px;
-}
-.telegram {
-    position: relative;
-    left: 100px; 
-    bottom: 10px;
+    left:245px;
 }
 .twitter {
+    width: 50px;
     position: relative;
-    bottom: 10px;
+    left:40px;
+    top: 30px;
 }
-.footer-img {
-    height: 5rem;
+.telegram {
+    width: 50px;
+    position: relative;
+    top: 100px;
+    /* left: 20px; */
+}
+.desktop-footer-links {
+    position: relative;
+    top: 100px;
+}
+.desktop-footer-right-image {
+    min-width: 100px;
+    min-height: 90px;
     background-image: url(./assetes/img/026_footer_c.right_bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    top: 140px;
-    left: 200px;
 }
-.footer-img-text {
-    width: 250px;
-    font-size: x-small;
-    color: white;
-    position: relative;
-    bottom: 10px;
-    left: 60px;
-}
-.camel2 {
+.desktop-footer-right-image-camel{
     width: 50px;
-    position: relative;
-    left: 150px;
-    bottom: 35px;
     border-radius: 50%;
+    position: relative;
+    left: 200px;
+    bottom: 20px;
+}
+.desktop-footer-right-image-text {
+    width: 200px;
+    font-size: x-small;
+    position: relative;
+    left: 100px;
+}
+.text-green {
+    color: green;
+}
+.under-line{
+    border-bottom: 2px solid green;
+    display: inline;
 }
 @media only screen and (max-width: 992px) {
     .nav-custom {
